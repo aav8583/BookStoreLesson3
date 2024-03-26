@@ -15,4 +15,5 @@ public class BookResponse {
     private LocalDateTime updatedAt;
     private boolean isActive;
     private Set<AuthorResponse> authors;
+    private Integer year;
 }

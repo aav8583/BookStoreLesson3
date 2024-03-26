@@ -17,6 +17,8 @@
             <column name="created_at" type="timestamp"/>
             <column name="updated_at" type="timestamp"/>
             <column name="is_active" type="boolean"/>
+            <column name="created_by" type="text"/>
+            <column name="modified_by" type="text"/>
         </createTable>
     </changeSet>
 
@@ -28,6 +30,8 @@
             <column name="title" type="text"/>
             <column name="created_at" type="timestamp"/>
             <column name="updated_at" type="timestamp"/>
+            <column name="created_by" type="text"/>
+            <column name="modified_by" type="text"/>
             <column name="is_active" type="boolean"/>
         </createTable>
     </changeSet>

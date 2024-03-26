@@ -2,3 +2,6 @@ databaseChangeLog:
   - include:
       file: 20231603_1529_create_book_table.xml
       relativeToChangelogFile: true
+  - include:
+      file: 20242003_1021_add_fields_in_book_table.xml
+      relativeToChangelogFile: true

@@ -6,7 +6,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
@@ -35,6 +37,16 @@ public abstract class BaseEntity implements Serializable {
     @Column(name = "updated_at")
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private LocalDateTime updatedAt;
+
+    @CreatedBy
+    @Column(name = "created_by")
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+    private String createdBy;
+
+    @LastModifiedBy
+    @Column(name = "modified_by")
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+    private String modifiedBy;
 
     @Column(name = "is_active", nullable = false)
     private boolean isActive = true;

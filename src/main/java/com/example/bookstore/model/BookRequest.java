@@ -9,5 +9,7 @@ public class BookRequest {
     private String authorFirstName;
     private String authorSecondName;
     private String authorLastName;
+    private Integer year;
+    private String description;
 
 }

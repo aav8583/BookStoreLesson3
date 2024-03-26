@@ -22,6 +22,8 @@ import java.util.Set;
 public class Book extends BaseEntity {
 
     private String title;
+    private Integer year;
+    private String description;
 
     @ManyToMany
     @JoinTable(
